@@ -1,0 +1,82 @@
+.navbarCustom {
+  background: rgb(4, 32, 54);
+  display: flex;
+}
+.navbarCustom h1 {
+  padding-left: 5%;
+  flex: 1;
+}
+.navbarCustom h1 a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+}
+.navbarCustom h1 a:hover {
+  color: rgb(107, 187, 252);
+}
+.navbarCustom .navActions ul {
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 3;
+}
+.navbarCustom ul li {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+.navbarCustom ul li a {
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+}
+.navbarCustom ul li a:hover {
+  color: rgb(107, 187, 252);
+  transition: 0.3s color ease-in-out;
+}
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    z-index: 222;
+    font-size: 2.4rem;
+    color: white;
+    cursor: pointer;
+    font-weight: lighter;
+  }
+  .navActions {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    left: 0;
+    z-index: 5;
+    background: rgb(4, 32, 54);
+  }
+  .navbarCustom .navActions ul {
+    justify-content: center;
+  }
+  .navActions ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navActions ul li {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,26 @@
+.landing {
+  height: 91vh;
+  background: url("../../img/bg2.jpg");
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.leftLanding {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .landing {
+    height: 85vh;
+    padding: 5%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .leftLanding {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}

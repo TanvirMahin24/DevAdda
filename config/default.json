@@ -1,0 +1,6 @@
+{
+  "mongoURI" : "mongodb+srv://TanvirMahin:Tmahin1234@cluster0-pyxvy.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret" : "secretbyMahin",
+  "githubClientID":"e49c4385760343e1cbba",
+  "githubClientSecret":"2a7f59bbcf4050e7d8ae56da957eebfc99cb038c"
+}

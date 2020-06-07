@@ -1,0 +1,6 @@
+.bgCustom {
+  background: url("./img/bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
