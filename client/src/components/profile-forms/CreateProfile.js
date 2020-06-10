@@ -47,8 +47,8 @@ const CreateProfile = ({createProfile , history}) => {
         createProfile(FormData , history);
     };
   return (
-    <Fragment>
-      <h1 className="large text-primary">Create Your Profile</h1>
+    <div className='container card card-body shadow shadow-sm my-4'>
+      <h1 className="text-dark">Create Your Profile</h1>
       <p className="lead">
         <i className="fas fa-user"></i> Let's get some information to make your
         profile stand out
@@ -56,7 +56,7 @@ const CreateProfile = ({createProfile , history}) => {
       <small>* = required field</small>
       <form className="form" onSubmit={e => onSubmit(e)}>
         <div className="form-group">
-          <select name="status" value={status} onChange={(e) => onChange(e)}>
+          <select className='form-control' name="status" value={status} onChange={(e) => onChange(e)}>
             <option value="0">* Select Professional Status</option>
             <option value="Developer">Developer</option>
             <option value="Junior Developer">Junior Developer</option>
@@ -73,6 +73,7 @@ const CreateProfile = ({createProfile , history}) => {
         </div>
         <div className="form-group">
           <input
+			className='form-control'
             type="text"
             placeholder="Company"
             name="company"
@@ -85,6 +86,7 @@ const CreateProfile = ({createProfile , history}) => {
         </div>
         <div className="form-group">
           <input
+			className='form-control'
             type="text"
             placeholder="Website"
             name="website"
@@ -97,6 +99,7 @@ const CreateProfile = ({createProfile , history}) => {
         </div>
         <div className="form-group">
           <input
+			className='form-control'
             type="text"
             placeholder="Location"
             name="location"
@@ -109,6 +112,7 @@ const CreateProfile = ({createProfile , history}) => {
         </div>
         <div className="form-group">
           <input
+			className='form-control'
             type="text"
             placeholder="* Skills"
             name="skills"
@@ -121,6 +125,7 @@ const CreateProfile = ({createProfile , history}) => {
         </div>
         <div className="form-group">
           <input
+			className='form-control'
             type="text"
             placeholder="Github Username"
             name="githubusername"
@@ -134,6 +139,7 @@ const CreateProfile = ({createProfile , history}) => {
         </div>
         <div className="form-group">
           <textarea
+			className='form-control'
             placeholder="A short bio of yourself"
             name="bio"
             value={bio}
@@ -146,7 +152,7 @@ const CreateProfile = ({createProfile , history}) => {
           <button
             onClick={() => toogleSocialInput(!displaySocialInput)}
             type="button"
-            className="btn btn-light"
+            className="btn btn-outline-primary mr-3"
           >
             Add Social Network Links
           </button>
@@ -156,8 +162,9 @@ const CreateProfile = ({createProfile , history}) => {
         {displaySocialInput && (
           <Fragment>
             <div className="form-group social-input">
-              <i className="fab fa-twitter fa-2x"></i>
+              <i className="fab fa-twitter"></i> Twitter
               <input
+				className='form-control'
                 type="text"
                 placeholder="Twitter URL"
                 name="twitter"
@@ -167,8 +174,9 @@ const CreateProfile = ({createProfile , history}) => {
             </div>
 
             <div className="form-group social-input">
-              <i className="fab fa-facebook fa-2x"></i>
+              <i className="fab fa-facebook"></i> Facebook
               <input
+				className='form-control'
                 type="text"
                 placeholder="Facebook URL"
                 name="facebook"
@@ -178,8 +186,9 @@ const CreateProfile = ({createProfile , history}) => {
             </div>
 
             <div className="form-group social-input">
-              <i className="fab fa-youtube fa-2x"></i>
+              <i className="fab fa-youtube"></i> YouTube
               <input
+				className='form-control'
                 type="text"
                 placeholder="YouTube URL"
                 name="youtube"
@@ -189,8 +198,9 @@ const CreateProfile = ({createProfile , history}) => {
             </div>
 
             <div className="form-group social-input">
-              <i className="fab fa-linkedin fa-2x"></i>
+              <i className="fab fa-linkedin"></i> Linkedin
               <input
+				className='form-control'
                 type="text"
                 placeholder="Linkedin URL"
                 name="linkedin"
@@ -200,8 +210,9 @@ const CreateProfile = ({createProfile , history}) => {
             </div>
 
             <div className="form-group social-input">
-              <i className="fab fa-instagram fa-2x"></i>
+              <i className="fab fa-instagram "></i> Instagram
               <input
+				className='form-control'
                 type="text"
                 placeholder="Instagram URL"
                 name="instagram"
@@ -212,12 +223,12 @@ const CreateProfile = ({createProfile , history}) => {
           </Fragment>
         )}
 
-        <input type="submit" className="btn btn-primary my-1" />
-        <Link className="btn btn-light my-1" to="/dashboard">
+        <input type="submit" className="btn btn-primary my-1 mr-2" />
+        <Link className="btn btn-primary my-1" to="/dashboard">
           Go Back
         </Link>
       </form>
-    </Fragment>
+    </div>
   );
 };
 
