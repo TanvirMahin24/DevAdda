@@ -25,7 +25,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
               with the people just like you
             </p>
             <div className="row">
-              <div className="card-deck">
+              <div className="card-deck col-12">
                 {profiles.length > 0 ? (
                   profiles.map((profile) => (
                     <ProfileListItem
