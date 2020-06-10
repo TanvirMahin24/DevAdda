@@ -271,7 +271,7 @@ const EditProfile = ({
           </Fragment>
         )}
 
-        <input type="submit" className="btn btn-primary my-2" />
+        <input type="submit" value="Submit" className="btn btn-primary my-2" />
         <Link className="btn btn-outline-primary my2 ml-3" to="/dashboard">
           Go Back
         </Link>
