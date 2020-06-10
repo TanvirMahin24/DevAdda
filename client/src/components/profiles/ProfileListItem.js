@@ -13,7 +13,7 @@ function ProfileListItem({
     social,
     website,
   },
-  col,
+  col = 4,
 }) {
   return (
     <div
