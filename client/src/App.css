@@ -1,6 +1,10 @@
+body{
+  min-height:100vh;
+}
 .bgCustom {
   background: url("./img/bg2.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+min-height:100vh;
 }
